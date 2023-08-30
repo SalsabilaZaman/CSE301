@@ -32,7 +32,31 @@ int maxprofit(int i,int w){
 	
 	return dp[i][w];
 }
+/*void printknapSack(int arr[][W+1], int value[],int *weight,int maxval)
+{
+    int i,w,result;
+    result=maxval;
+    w=W;
+    for (i=obj;i>0&&result>0;--i)
+    {
+        if(result==arr[i-1][w])continue;   
+        else
+        {
+            cout<<i<<" ";
+            result=result-value[i];
+            w=w-weight[i];
+        }
+    }
+}
+void printrec(int arr[][W+1], int value[],int *weight,int maxval,int i,int w){
+	if(i==0 || w ==0)return;
+	if(maxval==arr[i-1][w])printrec(arr,value,weight,maxval,i-1,w);
+	else{
+		printrec(arr,value,weight,maxval-value[i],i-1,w-weight[i]);
+			cout<<i<<" ";
+	}
 
+}*/
 
 int main(){
 
